@@ -1,6 +1,7 @@
 install.packages("data.table")
 library(data.table);
 
+<<<<<<< HEAD
 set.seed(12)
 
 #create DF with x, y, z variable
@@ -92,3 +93,10 @@ system.time(read.table(file, header=TRUE, sep="\t"))
 
 
 
+=======
+DF = data.frame(x=rnorm(9),y=rep(c("a","b","c"),each=3),z=rnorm(9));
+head(DF,3);
+
+DT = data.table(x=rnorm(9),y=rep(c("a","b","c"),each=3),z=rnorm(9));
+head(DT,3);
+>>>>>>> b7fa314bc23ca29f20fa43dbfea959bd97f32b00
